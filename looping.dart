@@ -39,8 +39,25 @@ void main() {
 //   }
 // }
 
+  // Method in Map
   print('Student Mapping is:');
   studentmap.forEach((key, value) {
     print('Key = $key : Value = $value');
   });
+
+  print('Key search:');
+  if(studentmap.containsKey(3)) {
+    print('Exist in the map.=>${studentmap.containsKey(3)}');
+  }else {
+    print('Does not exist in the map.');
+  }
+
+
+  print('Value search:');
+  if(studentmap.containsValue('Rafi')) {
+    print('Exist in the map.=>${studentmap.containsValue('Rafi')}');
+  }else {
+    print('Does not exist in the map.');
+  }
+
 }
